@@ -1,0 +1,490 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+{% load static %}
+
+	<head>
+		<title>Stellar by GOMS</title>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- Main Css-->
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" /></noscript>
+		<!-- Login Css-->
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}" />
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+
+
+		<link type = "text/css" href="{% static 'assets/css/temp.css' %}" rel="stylesheet"/>
+		<script src="{% static 'assets/js/temp.js' %}"></script>
+
+
+
+
+
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="{% static 'assets/images/logo.svg' %}" alt="" /></span>
+						<h1>RPS</h1>
+						<p>안녕하세요. 저희는 GOMS 입니다.<br />
+						made by <a href="generic.html"> GOMS</a>.</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Main</a></li>
+							<li><a href="#first">Introduction</a></li>
+							<li><a href="#second">Service</a></li>
+							<li><a href="#cta">Form</a></li>
+							<li><a href="#team">Team</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Main</h2>
+										</header>
+										<p><br>
+										한국고용정보원의 ‘대졸자직업이동경로조사(GOMS)’ 데이터셋을 이용해<br>
+										취업을 희망하시는 분들에게 취업 예측 서비스를 제공합니다.</p>
+										<ul class="actions">
+											<li><a href="generic.html" class="button">Learn More</a></li>
+										</ul>
+									</div>
+									<div>
+										<form action="loginimpl" method="post" class="loginForm">
+											{% csrf_token %}
+										  <h3>로그인</h3>
+										  <div class="idForm">
+											<input type="text" name="user_id" class="id" placeholder="ID">
+										  </div>
+										  <div class="passForm">
+											<input type="password" name="pwd" class="pw" placeholder="PW">
+										  </div>
+										  <button type="submit" class="btn" onclick="button()">
+											LOGIN
+										  </button>
+
+										  <div class="bottomText">
+											<a href="register.html">회원가입</a>
+										  </div>
+										</form>
+									</div>
+
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>Introduction</h2>
+								</header>
+								<p>시각화 자료들</p>
+								<div class='tableauPlaceholder' id='viz1628840188713' style='position: relative'><noscript><a href='#'><img alt='대시보드 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;go&#47;goms_univ&#47;2_1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='goms_univ&#47;2_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;go&#47;goms_univ&#47;2_1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko-KR' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1628840188713');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								<div class='tableauPlaceholder' id='viz1628840291561' style='position: relative'><noscript><a href='#'><img alt='대시보드 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;go&#47;goms_language&#47;1_1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='goms_language&#47;1_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;go&#47;goms_language&#47;1_1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko-KR' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1628840291561');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+							</section>
+
+						<!-- Second Section -->
+							<section id="second" class="main special">
+								<header class="major">
+									<h2>Service</h2>
+									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
+									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+								</header>
+								<ul class="statistics">
+									<li class="style1">
+										<span class="icon solid fa-code-branch"></span>
+										<strong>5,120</strong> Etiam
+									</li>
+									<li class="style2">
+										<span class="icon fa-folder-open"></span>
+										<strong>8,192</strong> Magna
+									</li>
+									<li class="style3">
+										<span class="icon solid fa-signal"></span>
+										<strong>2,048</strong> Tempus
+									</li>
+									<li class="style4">
+										<span class="icon solid fa-laptop"></span>
+										<strong>4,096</strong> Aliquam
+									</li>
+									<li class="style5">
+										<span class="icon fa-gem"></span>
+										<strong>1,024</strong> Nullam
+									</li>
+								</ul>
+								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Form -->
+			<section id="cta" class="main special">
+									<header class="major">
+
+										<h2 style = "font-family:'돋움'" >본인의 정보를 입력하세요</h2>
+									</header>
+
+
+									<form method="post" action="#">
+										<div class="row gtr-uniform">
+
+											<div class="col-12">
+												<select name="univ_type" id="univ_type">
+													<option value="">- 학교 유형 -</option>
+													<option value="1">2~3년제</option>
+													<option value="2">4년제</option>
+
+												</select>
+											</div>
+
+
+
+
+											<!-- Break -->
+<!--															<div class="col-12">-->
+<!--																<select name="demo-category" id="demo-category">-->
+<!--																	<option value="">- Category -</option>-->
+<!--																	<option value="1">Manufacturing</option>-->
+<!--																	<option value="1">Shipping</option>-->
+<!--																	<option value="1">Administration</option>-->
+<!--																	<option value="1">Human Resources</option>-->
+<!--																</select>-->
+<!--															</div>-->
+											<!-- Break -->
+											<div class="col-4 col-12-small">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">인턴경험 O</label>
+											</div>
+											<div class="col-8 col-12-small">
+												<input type="radio" id="demo-priority-normal" name="demo-priority">
+												<label for="demo-priority-normal">인턴경험 X</label>
+											</div>
+
+											<div class="col-6 col-12-small">
+												<input type="text" name="toeic" id="toeic" value="" placeholder="토익 점수" />
+											</div>
+											<div class="col-6 col-12-small">
+												<input type="text" name="tos" id="tos" value="" placeholder="토스 등급" />
+											</div>
+											<div class="col-4 col-12-small">
+												<input type="radio" id="jobseekY" name="jobseek" checked>
+												<label for="jobseekY">구직경험 O</label>
+											</div>
+											<div class="col-8 col-12-small">
+												<input type="radio" id="jobseekN" name="jobseek">
+												<label for="jobseekN">구직경험 X</label>
+											</div>
+											<div class="col-12 col-12-small">
+												<input type="text" name="training" id="training" value="" placeholder="직업 훈련 시간" />
+											</div>
+
+
+											<div class="dropdown">
+											  <button type = "button" onclick="myFunction()" class="drop">전공 선택</button>
+												{% csrf_token %}
+											  <div id="myDropdown" class="dropdown-content">
+												  <select type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+													<option value="">- 취업 희망 직종 -</option>
+													<option value="1"> 경영·사무·금융·보험직</option>
+													<option value="2"> 연구직 및 공학 기술직</option>
+													<option value="3"> 교육·법률·사회복지·경찰·소방직 및 군인</option>
+													<option value="4"> 보건·의료직</option>
+													<option value="5"> 예술·디자인·방송·스포츠직</option>
+													<option value="6"> 미용·여행·숙박·음식·경비·청소직</option>
+													<option value="7"> 영업·판매·운전·운송직</option>
+													<option value="8"> 건설·채굴직</option>
+													<option value="9"> 설치·정비·생산직</option>
+													<option value="10"> 농림어업직</option>
+
+												</select>
+
+											  </div>
+											</div>
+											<p><br></p>
+
+
+
+											<div class="col-12 col-12-small">
+												<input type="text" name="cert" id="cert" value="" placeholder="자격증 갯수" />
+											</div>
+											<div class="col-12">
+												<select name="want_type" id="want_type">
+													<option value="">- 취업 희망 직종 -</option>
+													<option value="1"> 경영·사무·금융·보험직</option>
+													<option value="2"> 연구직 및 공학 기술직</option>
+													<option value="3"> 교육·법률·사회복지·경찰·소방직 및 군인</option>
+													<option value="4"> 보건·의료직</option>
+													<option value="5"> 예술·디자인·방송·스포츠직</option>
+													<option value="6"> 미용·여행·숙박·음식·경비·청소직</option>
+													<option value="7"> 영업·판매·운전·운송직</option>
+													<option value="8"> 건설·채굴직</option>
+													<option value="9"> 설치·정비·생산직</option>
+													<option value="10"> 농림어업직</option>
+
+												</select>
+											</div>
+											<div class="col-12">
+												<select name="A34" id="A34">
+													<option value="">- 현재 일의 수준과 자신의 교육수준 비교 -</option>
+													<option value="1"> 일의 수준이 매우 낮다</option>
+													<option value="2"> 일의 수준이 낮다</option>
+													<option value="3"> 일의 수준이 알맞다</option>
+													<option value="4"> 일의 수준이 높다</option>
+													<option value="5"> 일의 수준이 매우 높다</option>
+												</select>
+											</div>
+											<div class="col-12">
+												<select name="A35" id="A35">
+													<option value="">- 현재 일의 기술 수준과 자신의 기술수준 비교 -</option>
+													<option value="1"> 일의 기술 수준이 매우 낮다</option>
+													<option value="2"> 일의 기술 수준이 낮다</option>
+													<option value="3"> 일의 기술 수준이 알맞다</option>
+													<option value="4"> 일의 기술 수준이 높다</option>
+													<option value="5"> 일의 기술 수준이 매우 높다</option>
+												</select>
+											</div>
+
+											<div class="col-12">
+												<select name="A36" id="A36">
+													<option value="">- 현재 일의 내용과 자신의 전공 비교 -</option>
+													<option value="1"> 전혀 맞지 않는다</option>
+													<option value="2"> 잘 맞지 않는다</option>
+													<option value="3"> 보통이다</option>
+													<option value="4"> 잘 맞는다</option>
+													<option value="5"> 매우 잘 맞는다</option>
+												</select>
+											</div>
+
+											<div class="col-12">
+												<select name="A36-1" id="A36-1">
+													<option value="">- 현재 일의 내용과 자신의 복수 전공 비교 -</option>
+													<option value="1"> 전혀 맞지 않는다</option>
+													<option value="2"> 잘 맞지 않는다</option>
+													<option value="3"> 보통이다</option>
+													<option value="4"> 잘 맞는다</option>
+													<option value="5"> 매우 잘 맞는다</option>
+													<option value="6"> 복수전공을 하지 않았다</option>
+												</select>
+											</div>
+											<div class="col-12">
+												<select name="A37" id="A37">
+													<option value="">- 현재 일의 내용과 자신의 전공지식 비교 -</option>
+													<option value="1"> 전혀 도움이 안 된다</option>
+													<option value="2"> 별로 도움이 안 된다 </option>
+													<option value="3"> 보통이다</option>
+													<option value="4"> 대체로 도움이 된다</option>
+													<option value="5"> 매우 도움이 된다</option>
+												</select>
+											</div>
+
+											<div class="col-12">
+												<select name="A38-1" id="A38-1">
+													<option value="">- 대학에서 배웠으면 업무에 도움이 되었을 거라고 생각했던 것 1순위 -</option>
+													<option value="1"> 의사소통능력</option>
+													<option value="2"> 수리통계능력 </option>
+													<option value="3"> 문제해결능력</option>
+													<option value="4"> 자기관리 및 개발능력</option>
+													<option value="5"> 자원활용능력</option>
+													<option value="6"> 대인관계능력</option>
+													<option value="7"> 정보수집 및 분석능력</option>
+													<option value="8"> 기술이해 및 활용능력</option>
+													<option value="9"> 조직이해 </option>
+													<option value="10"> 직업윤리</option>
+												</select>
+											</div>
+
+											<div class="col-12">
+												<select name="A38-2" id="A38-2">
+													<option value="">- 대학에서 배웠으면 업무에 도움이 되었을 거라고 생각했던 것 2순위 -</option>
+													<option value="1"> 의사소통능력</option>
+													<option value="2"> 수리통계능력 </option>
+													<option value="3"> 문제해결능력</option>
+													<option value="4"> 자기관리 및 개발능력</option>
+													<option value="5"> 자원활용능력</option>
+													<option value="6"> 대인관계능력</option>
+													<option value="7"> 정보수집 및 분석능력</option>
+													<option value="8"> 기술이해 및 활용능력</option>
+													<option value="9"> 조직이해 </option>
+													<option value="10"> 직업윤리</option>
+												</select>
+											</div>
+											<div class="col-12">
+												<select name="A39" id="A39">
+													<option value="">- 현재 일자리에서 요구되는 외국어 능력 -</option>
+													<option value="1"> 전혀 요구되지 않는다</option>
+													<option value="2"> 거의 요구되지 않는다 </option>
+													<option value="3"> 보통이다</option>
+													<option value="4"> 조금 요구된다</option>
+													<option value="5"> 많이 요구된다</option>
+												</select>
+											</div>
+
+											<div class="col-12">
+												<select name="A40" id="A40">
+													<option value="">- 업무상 요구되는 자격증이 있는 지 여부 -</option>
+													<option value="1"> 있다</option>
+													<option value="2"> 없다</option>
+												</select>
+											</div>
+
+											<div class="col-12">
+												<select name="A43" id="A43">
+													<option value="">- 현재 일자리를 얻기 위한 구직활동 경험여부 -</option>
+													<option value="1"> 있다</option>
+													<option value="2"> 없다</option>
+												</select>
+											</div>
+
+											<div class="col-12">
+												<select name="A44" id="A44">
+													<option value="">- 현재 일자리에 들어가게 된 주된 경로 -</option>
+													<option value="1"> (정시 및 수시) 공개 채용전형에 합격하여</option>
+													<option value="2"> 회사 측의 특별채용(스카우트)에 의하여(헤드헌터) </option>
+													<option value="3"> 학교(학원) 선생님이 나를 회사에 소개/추천해서</option>
+													<option value="4"> 가족, 친지 및 지인이 나를 회사에 소개/추천해서</option>
+													<option value="5"> 그 직장에 근무하고 있는 사람이 나를 회사에 소개/추천해서</option>
+													<option value="6"> 이력서를 등록한 인터넷 구직사이트를 보고 회사측에서 연락 후 면접을 통해서</option>
+													<option value="7"> 개인사업 시작(가족사업 참여)</option>
+													<option value="8"> 취업박람회를 통하여</option>
+													<option value="9"> 현 직장에서의 과거 업무경험(아르바이트, 인턴, 산학협력, 레지던트 등) </option>
+													<option value="10"> 공무원시험 혹은 교원시험 등에 합격하여</option>
+													<option value="11"> 군복무대체(산업기능요원복무, 방위산업체 등)</option>
+												</select>
+											</div>
+											<div class="col-12">
+												<select name="A45" id="A45">
+													<option value="">- 현재 일자리에 대한 정보를 얻은 주된 방법 -</option>
+													<option value="1"> 학교 취업정보실</option>
+													<option value="2"> 학과 사무실(교수, 강사, 학과 홈페이지)</option>
+													<option value="3"> 부모 또는 친척(형제자매 포함)</option>
+													<option value="4"> 친구, 선후배 등 지인</option>
+													<option value="5"> 신문, TV등 언론매체</option>
+													<option value="6"> 생활정보지</option>
+													<option value="7"> 공공취업알선기관(고용센터, 지자체 취업센터 등)</option>
+													<option value="8"> 사설취업알선기관(직업소개소 등)</option>
+													<option value="9"> 인터넷(취업사이트/카페 등) </option>
+													<option value="10"> 회사에 직접 연락 또는 회사 홈페이지</option>
+													<option value="11"> 직업 및 취업박람회</option>
+													<option value="12"> 학원</option>
+													<option value="13"> 현장실습/인턴십</option>
+													<option value="14"> 헤드헌터(서치 컨설턴트)</option>
+												</select>
+											</div>
+											<div class="col-12">
+												<select name="A47" id="A47">
+													<option value="">- 현재 일자리에 취업 시 중요 요소 -</option>
+													<option value="1"> 학교 취업정보실</option>
+													<option value="2"> 학과 사무실(교수, 강사, 학과 홈페이지)</option>
+													<option value="3"> 부모 또는 친척(형제자매 포함)</option>
+													<option value="4"> 친구, 선후배 등 지인</option>
+													<option value="5"> 신문, TV등 언론매체</option>
+													<option value="6"> 생활정보지</option>
+													<option value="7"> 공공취업알선기관(고용센터, 지자체 취업센터 등)</option>
+													<option value="8"> 사설취업알선기관(직업소개소 등)</option>
+													<option value="9"> 인터넷(취업사이트/카페 등) </option>
+													<option value="10"> 회사에 직접 연락 또는 회사 홈페이지</option>
+													<option value="11"> 직업 및 취업박람회</option>
+													<option value="12"> 학원</option>
+													<option value="13"> 현장실습/인턴십</option>
+													<option value="14"> 헤드헌터(서치 컨설턴트)</option>
+												</select>
+											</div>
+
+
+
+											<!-- Break -->
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" value="&nbsp GO &nbsp" class="primary" /></li>
+													<li><input type="reset" value="Reset" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</section>
+
+						<!-- Team -->
+							<section id="team" class="main special">
+								<header class="major">
+									<h2>Team GOMS</h2>
+									<p>Team Members</p>
+								</header>
+
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button primary">Show More</a></li>
+									</ul>
+								</footer>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Support</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; Republic of Korea</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+
+
+
+	</body>
+
+</html>
